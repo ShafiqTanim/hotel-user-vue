@@ -1,56 +1,23 @@
 <template>
-    <footer class="section footer-section">
+    <div id="footer">
       <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-             <li><a href="#">Rooms</a></li>
-            </ul>
+        <div class="row">
+          <div class="col-12">
+            <div class="social">
+              <a href=""><li class="fa fa-instagram"></li></a>
+              <a href=""><li class="fa fa-twitter"></li></a>
+              <a href=""><li class="fa fa-facebook-f"></li></a>
+            </div>
           </div>
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="#">The Rooms &amp; Suites</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Restaurant</a></li>
-            </ul>
+          <div class="col-12">
+              <p>Copyright &#169; 2045 <a href="">Your Site Name</a> All Rights Reserved.</p>
+  
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
           </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span> 198 West 21th Street, <br> Suite 721 New York NY 10016</span></p>
-            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> (+1) 435 3533</span></p>
-            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> info@domain.com</span></p>
-          </div>
-          <div class="col-md-3 mb-5">
-            <p>Sign up for our newsletter</p>
-            <form action="#" class="footer-newsletter">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email...">
-                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <p class="col-md-6 text-left">
-            
-            Copyright  All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            
-          </p>
-            
-          <p class="col-md-6 text-right social">
-            <a href="#"><span class="fa fa-tripadvisor"></span></a>
-            <a href="#"><span class="fa fa-facebook"></span></a>
-            <a href="#"><span class="fa fa-twitter"></span></a>
-            <a href="#"><span class="fa fa-linkedin"></span></a>
-            <a href="#"><span class="fa fa-vimeo"></span></a>
-          </p>
         </div>
       </div>
-    </footer>
+    </div>
 </template>
 
 <script>

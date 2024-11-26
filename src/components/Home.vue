@@ -1,481 +1,580 @@
 <template>
-    <section class="site-hero overlay" style="background-image: url(/assets/images/hero_4.jpg)" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row site-hero-inner justify-content-center align-items-center">
-          <div class="col-md-10 text-center" data-aos="fade-up">
-            <span class="custom-caption text-uppercase text-white d-block  mb-3">Welcome To 5 <span class="fa fa-star text-primary"></span>   Hotel</span>
-            <h1 class="heading">A Best Place To Stay</h1>
-          </div>
-        </div>
-      </div>
-
-      <a class="mouse smoothscroll" href="#next">
-        <div class="mouse-icon">
-          <span class="mouse-wheel"></span>
-        </div>
-      </a>
-    </section>
-    <!-- END section -->
-
-    <section class="section bg-light pb-0"  >
-      <div class="container">
-       
-        <div class="row check-availabilty" id="next">
-          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
-
-            <form action="#">
-              <div class="row">
-                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                  <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
-                  <div class="field-icon-wrap">
-                    <div class="icon"><span class="icon-calendar"></span></div>
-                    <input type="text" id="checkin_date" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                  <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
-                  <div class="field-icon-wrap">
-                    <div class="icon"><span class="icon-calendar"></span></div>
-                    <input type="text" id="checkout_date" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-                  <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <label for="adults" class="font-weight-bold text-black">Adults</label>
-                      <div class="field-icon-wrap">
-                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="adults" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
-                        </select>
-                      </div>
+            <!-- Header Slider Start -->
+            <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlider" data-slide-to="1"></li>
+                <li data-target="#headerSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/slider/header-slider-1.jpg" alt="Royal Hotel">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInRight">Nullam mattis</h1>
                     </div>
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <label for="children" class="font-weight-bold text-black">Children</label>
-                      <div class="field-icon-wrap">
-                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="children" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
-                        </select>
-                      </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="assets/img/slider/header-slider-2.jpg" alt="Royal Hotel">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">Lorem ipsum</h1>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 col-lg-3 align-self-end">
-                  <button class="btn btn-primary btn-block text-white">Check Availabilty</button>
+
+                <div class="carousel-item">
+                    <img src="assets/img/slider/header-slider-3.jpg" alt="Royal Hotel">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInRight">Phasellus ultrices</h1>
+                    </div>
                 </div>
-              </div>
-            </form>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-12 col-lg-7 ml-auto order-lg-2 position-relative mb-5" data-aos="fade-up">
-            <figure class="img-absolute">
-              <img src="/assets/images/food-1.jpg" alt="Image" class="img-fluid">
-            </figure>
-            <img src="/assets/images/img_1.jpg" alt="Image" class="img-fluid rounded">
-          </div>
-          <div class="col-md-12 col-lg-4 order-lg-1" data-aos="fade-up">
-            <h2 class="heading">Welcome!</h2>
-            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p><a href="#" class="btn btn-primary text-white py-2 mr-3">Learn More</a> <span class="mr-3 font-family-serif"><em>or</em></span> <a href="https://vimeo.com/channels/staffpicks/93951774"  data-fancybox class="text-uppercase letter-spacing-1">See video</a></p>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">Rooms &amp; Suites</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="/assets/images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Single Room</h2>
-                <span class="text-uppercase letter-spacing-1">90$ / per night</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="/assets/images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Family Room</h2>
-                <span class="text-uppercase letter-spacing-1">120$ / per night</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="/assets/images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Presidential Room</h2>
-                <span class="text-uppercase letter-spacing-1">250$ / per night</span>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    
-    
-    <section class="section slider-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">Photos</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="slider-item">
-                <a href="/assets/images/slider-1.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-2.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-3.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-3.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-4.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-4.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-5.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-5.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-6.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-6.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="/assets/images/slider-7.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/assets/images/slider-7.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
             </div>
-            <!-- END slider -->
-          </div>
+
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Header Slider End -->
         
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-    
-    <section class="section bg-image overlay" style="background-image: url('/assets/images/hero_3.jpg');">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading text-white" data-aos="fade">Our Restaurant Menu</h2>
-            <p class="text-white" data-aos="fade" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-        <div class="food-menu-tabs" data-aos="fade">
-          <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active letter-spacing-2" id="mains-tab" data-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="true">Mains</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link letter-spacing-2" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link letter-spacing-2" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
-            </li>
-          </ul>
-          <div class="tab-content py-5" id="myTabContent">
-            
-            
-            <div class="tab-pane fade show active text-left" id="mains" role="tabpanel" aria-labelledby="mains-tab">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$20.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Murgh Tikka Masala</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$35.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Fish Moilee</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$15.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Safed Gosht</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+        <!-- Search Section Start -->
+        <div id="search">
+            <div class="container">
+                <div class="form-row">
+                    <div class="control-group col-md-3">
+                        <label>Check-In</label>
+                        <div class="form-group">
+                            <div class="input-group date" id="date-3" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#date-3"/>
+                                <div class="input-group-append" data-target="#date-3" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <label>Check-Out</label>
+                        <div class="form-group">
+                            <div class="input-group date" id="date-4" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#date-4"/>
+                                <div class="input-group-append" data-target="#date-4" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <div class="form-row">
+                            <div class="control-group col-md-6">
+                                <label>Adult</label>
+                                <select class="custom-select">
+                                    <option selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="control-group col-md-6 kid">
+                                <label>Kid</label>
+                                <select class="custom-select">
+                                    <option selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group col-md-3">
+                        <button class="btn btn-block">Search</button>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$10.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">French Toast Combo</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$8.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Vegie Omelet</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$22.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Chorizo &amp; Egg Omelet</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+            </div>
+        </div>
+        <!-- Search Section End -->
+        
+        <!-- Welcome Section Start -->
+        <div id="welcome">
+            <div class="container">
+                <h3>Welcome to Royal Hotel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida sollicitudin turpis id posuere. Fusce nec rhoncus nibh. Fusce arcu libero, euismod eget commodo at, venenatis a nisi. Sed faucibus metus sed leo vulputate blandit.</p>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+        <!-- Welcome Section End -->
+        
+        <!-- Amenities Section Start -->
+        <div id="amenities" class="home-amenities">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Amenities & Services</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt.
+                    </p>
                 </div>
-              </div>
-              
-
-            </div> <!-- .tab-pane -->
-
-            <div class="tab-pane fade text-left" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$11.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Banana Split</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$72.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Sticky Toffee Pudding</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$26.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Pecan</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-2"></i>
+                        <h3>Air Conditioner</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-3"></i>
+                        <h3>Bathtub</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-4"></i>
+                        <h3>Shower</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-6"></i>
+                        <h3>Television</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-7"></i>
+                        <h3>WiFi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-8"></i>
+                        <h3>Telephone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-9"></i>
+                        <h3>Mini Bar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 icons">
+                        <i class="icon icon-10"></i>
+                        <h3>Kitchen</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$42.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Apple Strudel</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$7.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Pancakes</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$22.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Ice Cream Sundae</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+            </div>
+        </div>
+        <!-- Amenities Section Start -->
+        
+        <!-- Room Section Start -->
+        <div id="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Rooms</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt.
+                    </p>
                 </div>
-              </div>
-            </div> <!-- .tab-pane -->
-            <div class="tab-pane fade text-left" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$32.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Spring Water</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$14.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Coke, Diet Coke, Coke Zero</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$93.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Orange Fanta</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="assets/img/room/room-1.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Single</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 260 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$150</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="assets/img/room/room-2.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Double</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 350 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$200</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="assets/img/room/room-3.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Premium Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Premium Single</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 200 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$220</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="assets/img/room/room-4.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Silver Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Silver Double</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 200 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$180</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="assets/img/room/room-5.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Premium Double</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Premium Double</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Size: 450 sq ft </li>
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$400</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$18.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Lemonade, Lemon Squash</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$38.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Sparkling Mineral Water</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$69.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Lemon, Lime &amp; Bitters</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+            </div>
+        </div>
+        <!-- Room Section End -->
+        
+        <!-- Modal for Room Section Start -->
+        <div id="modal-id" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="port-slider">
+                                    <div><img src="assets/img/room-slider/room-1.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-2.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-3.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-4.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-5.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-6.jpg"></div>
+                                </div>
+                                <div class="port-slider-nav">
+                                    <div><img src="assets/img/room-slider/room-1.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-2.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-3.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-4.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-5.jpg"></div>
+                                    <div><img src="assets/img/room-slider/room-6.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor viverra purus imperdiet rhoncus imperdiet. Suspendisse vulputate condimentum ligula sollicitudin hendrerit. Phasellus luctus, elit et ultrices interdum, neque mi pellentesque massorci. Nam in cursus ex, nec mattis lectus. Curabitur quis elementum nunc. Mauris iaculis, justo eu aliquam sagittis, arcu eros cursus libero, sit amet eleifend dolor odio at lacus. 
+                                </p>
+                                <div class="modal-link">
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div> <!-- .tab-pane -->
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <!-- END section -->
-    <section class="section testimonial-section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">People Says</h2>
-          </div>
+        <!-- Modal for Room Section End -->
+        
+        <!-- Subscribe Section Start -->
+        <div id="subscribe">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Subscribe for Special Offer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="subscribe-form">
+                            <form>
+                                <input type="email" required="required" placeholder="Enter your email here" />
+                                <button>submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="js-carousel-2 owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
-            
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_1.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; Jean Smith</em></p>
-            </div> 
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
+        <!-- Subscribe Section End -->
+        
+        <!-- Booking Section Start -->
+        <div id="booking">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Room Booking</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="booking-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="bookingForm" novalidate="novalidate">
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" id="fname" placeholder="E.g. John" required="required" data-validation-required-message="Please enter first name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control" id="lname" placeholder="E.g. Sina" required="required" data-validation-required-message="Please enter last name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <label>Mobile</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="E.g. +1 234 567 8900" required="required" data-validation-required-message="Please enter your mobile number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="E.g. email@example.com" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <label>Check-In</label>
+                                        <input type="text" class="form-control datetimepicker-input" id="date-1" data-toggle="datetimepicker" data-target="#date-1" placeholder="E.g. MM/DD/YYYY" required="required" data-validation-required-message="Please enter date"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <label>Check-Out</label>
+                                        <input type="text" class="form-control datetimepicker-input" id="date-2" data-toggle="datetimepicker" data-target="#date-2" placeholder="E.g. MM/DD/YYYY" required="required" data-validation-required-message="Please enter date"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Special Request</label>
+                                    <input type="text" class="form-control" id="request" placeholder="E.g. Special Request" required="required" data-validation-required-message="Please enter your special request" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="button"><button type="submit" id="bookingButton">Book Now</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_1.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; Jean Smith</em></p>
-            </div> 
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="/assets/images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-          </div>
-            <!-- END slider -->
         </div>
-
-      </div>
-    </section>
-    
-
-    <section class="section blog-post-entry bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">Events</h2>
-            <p data-aos="fade-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
+        <!-- Booking Section End -->
+        
+        <!-- Call Section Start -->
+        <div id="call-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Click Below to Call Us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque convallis, enim at venenatis tincidunt.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="tel:+12345678900">+1 234 567 8900</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="/assets/images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="/assets/images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">5 Job Types That Aallow You To Earn As You Travel The World</a></h2>
-                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="/assets/images/img_3.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">30 Great Ideas On Gifts For Travelers</a></h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. t is a paradisematic country, in which roasted parts of sentences.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-image overlay" style="background-image: url('/assets/images/hero_4.jpg');">
-        <div class="container" >
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
-              <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
-            </div>
-            <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
-              <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Call Section End -->
 </template>
 
 <script>
