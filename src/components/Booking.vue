@@ -89,7 +89,7 @@
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group col-md-6">
-                                        <label>Last Name</label>
+                                        <label>Room</label>
                                         <input type="text" class="form-control" id="lname" placeholder="E.g. Sina" required data-validation-required-message="Please enter last name" />
                                         <p class="help-block text-danger"></p>
                                     </div>
