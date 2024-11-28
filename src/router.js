@@ -43,6 +43,12 @@ const routes = [
         name: "contact",
         component: () => import("./components/Contact")
     },
+    {
+        path: "/profile",
+        alias: "/profile",
+        name: "profile",
+        component: () => import("./components/Profile")
+    },
 ];
 
 const router = createRouter({

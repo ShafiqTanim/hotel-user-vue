@@ -25,11 +25,11 @@
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <label>Contact</label>
-                                    <input type="text" v-model="register.contact" placeholder="Name" class="form-control" required="required" />
+                                    <input type="text" v-model="register.contact" placeholder="Contact" class="form-control" required="required" />
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <label>NID</label>
-                                    <input type="text" v-model="register.nid" placeholder="Email" class="form-control" required="required" />
+                                    <input type="text" v-model="register.nid" placeholder="NID" class="form-control" required="required" />
                                 </div>
                             </div>
                             <div class="form-row">
@@ -53,11 +53,11 @@
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <label>Your Email</label>
-                                    <input type="email" v-model="loginData.email" class="form-control" required="required" />
+                                    <input type="email" v-model="loginData.email"  class="form-control" placeholder="Email" required="required" />
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <label>Your Password</label>
-                                    <input type="password" v-model="loginData.password" class="form-control" required="required" />
+                                    <label>Your </label>
+                                    <input type="password" v-model="loginData.password" class="form-control" placeholder="Password" required="required" />
                                 </div>
                             </div>
                             <div class="button"><button @click="login">Login</button></div>
@@ -149,7 +149,7 @@ import router from '@/router';
                     sessionStorage.setItem('uid', response.data.data.token);
                     else
                     alert(response.data.error)
-                    
+                    console.log(response)
                     router.push({ name: 'booking' });
                     window.location.href='/booking';
                 })
