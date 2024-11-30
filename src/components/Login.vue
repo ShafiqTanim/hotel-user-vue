@@ -71,8 +71,8 @@
 
 <script>
 
-import DataService from "../services/DataService";
-import router from '@/router';
+    import DataService from "../services/DataService";
+    import router from '@/router';
 
     export default {
         name: 'Login',
@@ -112,22 +112,19 @@ import router from '@/router';
                 };
 
                 // Send registration data to the backend
-                DataService.registration(data)
-                    .then(response => {
+                DataService.registration(data) .then(response => {
                     if (response.data.data) {
-                    alert('register success')
-                    window.location.reload();
+                        alert('register success')
+                        window.location.reload();
                     
                     } else {
                         alert(response.data.error);
                     }
-                    })
-                    
-                    .catch(e => {
+                })
+                .catch(e => {
                     console.error(e);
                     alert('An error occurred during registration.');
-                    });
-                
+                });
             },
 
             login(){
