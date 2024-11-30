@@ -12,7 +12,7 @@
         <li><a href="http://localhost:8081/booking">Booking</a></li>
         <li><a href="http://localhost:8081/login">Login</a></li>
         <li><a href="http://localhost:8081/contact">Contact Us</a></li>
-        <li><a href="http://localhost:8081/contact">Contact Us</a></li>
+        <li><a href="http://localhost:8081/profile">Profile</a></li>
       </ul>
     </nav>
   </header>
