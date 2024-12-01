@@ -96,20 +96,14 @@
 
 <script>
 
-// import DataService from "../services/DataService";
+import DataService from "../services/DataService";
 // import router from '@/router';
 
 export default {
     data() {
+        console.log(JSON.parse(sessionStorage.getItem('udata')))
         return {
-            user: {
-                name: 'John Doe',
-                email: 'john.doe@example.com',
-                contact: '123-456-7890',
-                address: 'chittagong',
-                nid: '1234567890',
-                nationality: 'Bangladeshi',
-            },
+            user: JSON.parse(sessionStorage.getItem('udata')),
             isEditing: false
         };
     },
@@ -120,13 +114,20 @@ export default {
         cancelEditing() {
             this.isEditing = false;
         },
-        updateProfile() {
-            // Here, you would typically make an API call to update the profile
+        updateProfile(id) {
+        DataService.updateProfile(id) // This should return a promise
+            .then(response => {
+            this.user = response.data; // Update the user data with the response
             console.log('Profile updated', this.user);
+            })
+            .catch(e => {
+            console.error('Error updating profile:', e);
+            });
 
-            // After updating, disable editing mode
+            // Disable editing mode after initiating the update
             this.isEditing = false;
         }
+
     }
 };
 </script>

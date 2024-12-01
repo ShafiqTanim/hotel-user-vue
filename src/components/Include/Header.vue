@@ -5,24 +5,54 @@
     <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
     <nav class="main-menu top-menu">
       <ul>
-        <li class="active"><a href="http://localhost:8081/">Home</a></li>
-        <li><a href="http://localhost:8081/about">About Us</a></li>
-        <li><a href="http://localhost:8081/room">Rooms</a></li>
-        <li><a href="http://localhost:8081/amenities">Amenities</a></li>
-        <li><a href="http://localhost:8081/booking">Booking</a></li>
-        <li><a href="http://localhost:8081/login">Login</a></li>
-        <li><a href="http://localhost:8081/contact">Contact Us</a></li>
-        <li><a href="http://localhost:8081/profile">Profile</a></li>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/room">Rooms</a></li>
+        <li><a href="/amenities">Amenities</a></li>
+        <li><a href="/booking">Booking</a></li>
+        <li v-if="!logged_in"><a href="/login">Login</a></li>
+        <li v-if="logged_in" @click="logout"><a href="/login">Logout</a></li>
+        <!-- <li v-else @click="logout"><a href="/login">Logout</a></li> -->
+        <li><a href="/contact">Contact Us</a></li>
+        <li v-if="logged_in"><a href="/profile">Profile</a></li>
       </ul>
     </nav>
   </header>
 </template>
 
-<script>
+<!-- <script>
   export default {
     name: 'Header',
+    data(){
+      return{
+        'logged_in':sessionStorage.getItem('uid')
+      }
+    },
     props: {
       msg: String
     }
+
+    
   }
+</script> -->
+
+<script>
+export default {
+  name: 'Header',
+  data(){
+      return{
+        'logged_in':sessionStorage.getItem('udata')
+      }
+    },
+  props: {
+    msg: String
+  },
+  methods: {
+    logout() {
+      this.uid="";
+      sessionStorage.setItem('udata', '');
+      window.location.reload();
+    }
+  }
+}
 </script>

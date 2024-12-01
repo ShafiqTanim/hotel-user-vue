@@ -142,13 +142,14 @@
                 DataService.login(data)
                 .then(response => {
                     console.log(response.data.data.token)
-                    if(response.data.data.token)
-                    sessionStorage.setItem('uid', response.data.data.token);
-                    else
+                    if(response.data.data.token){
+                        sessionStorage.setItem('uid', response.data.data.token);
+                        sessionStorage.setItem('udata', JSON.stringify(response.data.data.data));
+                    }else
                     alert(response.data.error)
                     console.log(response)
-                    router.push({ name: 'booking' });
-                    window.location.href='/booking';
+                    router.push({ name: 'profile' });
+                    window.location.href='/profile';
                 })
                 .catch(e => {
                     console.log(e);

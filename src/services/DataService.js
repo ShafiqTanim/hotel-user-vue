@@ -7,6 +7,9 @@ class DataService {
   registration(data) {
     return http.post("customer/register", data);
   }
+  updateProfile(data) {
+    return http.post('customer/edit/{customer}', data);
+  }
   // orders(uid) {
   //   return http.get(`/orders/${uid}`);
   // }
