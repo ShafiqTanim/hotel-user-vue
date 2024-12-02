@@ -10,6 +10,12 @@ class DataService {
   updateProfile(data) {
     return http.post('customer/edit/{customer}', data);
   }
+  reservationRequest(data) {
+    return http.post('reservation/create', data);
+  }
+  roomList(data) {
+    return http.get('roomlist/index', data);
+  }
   // orders(uid) {
   //   return http.get(`/orders/${uid}`);
   // }
