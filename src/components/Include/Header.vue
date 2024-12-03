@@ -15,7 +15,7 @@
         <!-- <li v-else @click="logout"><a href="/login">Logout</a></li> -->
         <li><a href="/contact">Contact Us</a></li>
         <li v-if="logged_in"><a href="/profile">Profile</a></li>
-        <li> {{user.name}} </li>
+        <li> {{user?.name}} </li>
       </ul>
     </nav>
   </header>
