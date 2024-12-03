@@ -3,7 +3,7 @@
     <div id="profile">
         <div class="container">
             <div class="section-header">
-                <h2>Your Profile</h2>
+                <h2>{{user.name}}'s Profile</h2>
                 <p>
                     Here is your profile information. You can update your details if needed.
                 </p>

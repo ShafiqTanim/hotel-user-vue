@@ -145,6 +145,8 @@
                     if(response.data.data.token){
                         sessionStorage.setItem('uid', response.data.data.token);
                         sessionStorage.setItem('udata', JSON.stringify(response.data.data.data));
+                        console.log(('udata', JSON.stringify(response.data.data.data)));
+                        
                     }else
                     alert(response.data.error)
                     console.log(response)

@@ -15,6 +15,7 @@
         <!-- <li v-else @click="logout"><a href="/login">Logout</a></li> -->
         <li><a href="/contact">Contact Us</a></li>
         <li v-if="logged_in"><a href="/profile">Profile</a></li>
+        <li> {{user.name}} </li>
       </ul>
     </nav>
   </header>
@@ -40,8 +41,11 @@
 export default {
   name: 'Header',
   data(){
+      console.log(sessionStorage.getItem('udata'));
       return{
-        'logged_in':sessionStorage.getItem('udata')
+        user: sessionStorage.getItem('udata'),
+        'logged_in':sessionStorage.getItem('udata'),
+        
       }
     },
   props: {
