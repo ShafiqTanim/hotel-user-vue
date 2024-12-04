@@ -1,5 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
 
+function isAuthenticated() {
+    // Check if 'udata' exists in sessionStorage
+    return !!sessionStorage.getItem('udata');
+}
+
 const routes = [
     {
         path: "/",
@@ -47,7 +52,14 @@ const routes = [
         path: "/profile",
         alias: "/profile",
         name: "profile",
-        component: () => import("./components/Profile")
+        component: () => import("./components/Profile"),
+        beforeEnter: (to, from, next) => {
+            if (isAuthenticated()) {
+                next(); // Allow access if authenticated
+            } else {
+                next("/login"); // Redirect to login if not authenticated
+            }
+        }
     },
 ];
 
